@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Enterprise_App.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontAttributes="Bold" Grid.Column="0" Text="Basic info" Margin="4" />
+
+            <StackLayout Orientation="Vertical">
+                <Label FontAttributes="Bold" Grid.Column="0" Grid.Row="0" Text="Name:" />
+                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+
+                <Label FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Text="Username:" />
+                <Label Grid.Column="1" Grid.Row="1" Text="{Binding Username}" />
+
+                <Label FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Text="Email:" />
+                <Label Grid.Column="1" Grid.Row="2" Text="{Binding Email}" />
+
+                <Label FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Text="Phone:" />
+                <Label Grid.Column="1" Grid.Row="3" Text="{Binding Phone}" />
+
+                <Label FontAttributes="Bold" Grid.Column="0" Grid.Row="4" Text="Website:" />
+                <Label Grid.Column="1" Grid.Row="4" Text="{Binding Website}" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
